@@ -22,6 +22,7 @@
   </defs>
   <g id="slider_3" data-name="slider 3" clip-path="url(#clip-slider_3)">
     <rect width="404" height="300" fill="#fff"/>
+    <rect id="Rectangle_12924" data-name="Rectangle 12924" width="404" height="300" fill="#f9fbfc"/>
     <g id="Group_49449" data-name="Group 49449" transform="translate(-145 -239)">
       <path id="Rectangle_109" data-name="Rectangle 109" d="M121,0H245a0,0,0,0,1,0,0V246a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V121A121,121,0,0,1,121,0Z" transform="translate(189 266)" fill="#f47122"/>
       <path id="Rectangle_110" data-name="Rectangle 110" d="M121,0h92a0,0,0,0,1,0,0V212a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V121A121,121,0,0,1,121,0Z" transform="translate(205 281)" fill="#fff"/>

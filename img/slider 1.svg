@@ -179,6 +179,7 @@
   </defs>
   <g id="slider_1" data-name="slider 1" clip-path="url(#clip-slider_1)">
     <rect width="514" height="300" fill="#fff"/>
+    <rect id="Rectangle_12924" data-name="Rectangle 12924" width="514" height="300" fill="#f9fbfc"/>
     <g id="Group_49448" data-name="Group 49448" transform="translate(-71.56 -262)">
       <g id="Group_309" data-name="Group 309" transform="translate(100.95 305.847)">
         <path id="Path_349" data-name="Path 349" d="M737.511,850.033a161.832,161.832,0,0,0,47.885,7.245h345.126a161.823,161.823,0,0,0,47.884-7.245H737.511Z" transform="translate(-737.511 -601.125)" fill="url(#linear-gradient-2)"/>

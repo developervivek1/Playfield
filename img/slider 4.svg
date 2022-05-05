@@ -12,6 +12,7 @@
   </defs>
   <g id="slider_4" data-name="slider 4" clip-path="url(#clip-slider_4)">
     <rect width="390" height="300" fill="#fff"/>
+    <rect id="Rectangle_12924" data-name="Rectangle 12924" width="390" height="300" fill="#f9fbfc"/>
     <g id="Group_49450" data-name="Group 49450" transform="translate(-149 -258)">
       <path id="Rectangle_113" data-name="Rectangle 113" d="M0,0H97A162,162,0,0,1,259,162v97H0Z" transform="translate(260.323 299)" fill="#006bff" opacity="0.04"/>
       <path id="Rectangle_114" data-name="Rectangle 114" d="M0,0H50A162,162,0,0,1,212,162v98H0Z" transform="translate(381 558) rotate(180)" fill="#006bff" opacity="0.03"/>
