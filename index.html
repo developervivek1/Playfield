@@ -11,14 +11,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/customdropdown.css">
     <script src="js/script.js"></script>
 </head>
 
 <body>
     <header class="header bg-white d-non" id="header">
+        <div class="d-block d-md-none">
+            <!-- <a id="burgersm2" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display:none;"><img
+                src="img/close.svg" width="24" alt=""></a> -->
+            <a id="burgersm" href="#" class="openbtn" onclick="openNav()"><img src="img/noun-menu-705116.svg" width="24"
+                alt=""></a>
+        </div>
+        
         <!-- <div class=" header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div> -->
-        <div><img src="img/play_field.svg" width="100" alt=""></div>
+        <div class="d-none d-md-block"><img src="img/play_field.svg" width="100" alt=""></div>
 
         <div class="d-flex justify-content-between">
             <div class="pe-4 searchBox d-flex"> <input type="text" id="search2" class="form-control form-search"
@@ -62,10 +70,20 @@
     </header>
 
     <div id="mySidenav" class="sidenav">
-        <a id="burger2" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display:none;"><img
+        <div class="d-flex d-md-none border-bottom">
+            <a class="ps-3 pt-2 pb-1" href="#"><img src="img/play_field.svg" width="100" alt=""></a>
+            <a id="burgersm2" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display:none;"><img
+               class="float-end ps-3" src="img/noun-close-4619407 (1).svg" alt=""></a>
+        </div>
+
+        <div class="d-none d-md-block">
+            <a id="burger2" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display:none;"><img
                 src="img/close.svg" width="24" alt=""><span>Collapse</span></a>
         <a id="burger" href="#" class="openbtn" onclick="openNav()"><img src="img/close.svg" width="24"
                 alt=""><span>Collapse</span></a>
+        </div>
+        
+        
         <a href="#" class="active"><img src="img/home.svg" alt=""> <span class="active">Home</span></a>
         <a href="#"><img src="img/football.svg" alt=""> <span>Playfield</span></a>
         <a href="#"><img src="img/profile.svg" alt=""> <span>Ownership</span></a>

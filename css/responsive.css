@@ -4,3 +4,16 @@
       }
 
 }
+
+
+@media (max-width:768px){
+  #main {  
+    margin-left: 0px !important;
+    border-left: 0px solid rgb(235, 232, 232);
+  }
+
+  .sidenav {
+    padding-top: 0px;
+    width: 0px;
+  }
+}
