@@ -28,12 +28,13 @@ function openSearch(){
 const mediaQuery = window.matchMedia('(max-width: 768px)')
 // Check if the media query is true
 if (mediaQuery.matches) {
-  // Then trigger an alert
+  // Then 
   function openNav() {
     var element = document.getElementById("mySidenav");
     element.classList.add("mystyle");
     document.getElementById("mySidenav").style.width = "80%";
     document.getElementById("mySidenav").style.zIndex = "999";
+    document.getElementById("main").style.backgroundColor = "grey";
     document.getElementById("main").style.marginLeft = "0px";
     document.getElementById("burgersm").style.display = "none";
     document.getElementById("burgersm2").style.display = "block";
@@ -47,5 +48,6 @@ if (mediaQuery.matches) {
     document.getElementById("main").style.marginLeft= "0px";
     document.getElementById("burgersm2").style.display = "none";
     document.getElementById("burgersm").style.display = "block";
+    document.getElementById("main").style.backgroundColor = "transparent";
   }
 }
