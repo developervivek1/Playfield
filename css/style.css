@@ -3,7 +3,7 @@
 
 
 :root {
-    --header-height: 3rem;
+    --header-height: 3.5rem;
     --nav-width: 68px;
     --body-font: 'Roboto', sans-serif;
     --z-fixed: 100
@@ -12,7 +12,7 @@
 *,
 ::before,
 ::after {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 
@@ -28,7 +28,7 @@ body {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .header {
@@ -43,53 +43,100 @@ a {
     padding: 0 1rem;
     background-color: var(--white-color);
     z-index: var(--z-fixed);
-    transition: .5s
+    transition: .5s;
+    border-bottom: 1px solid rgb(235, 232, 232);
 }
 
 .sidenav {
     height: 100%;
-    width: 50px;
+    width: 80px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #FFFFFF;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    /* border-right: 1px solid rgb(165, 161, 161); */
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 15px 8px 15px 32px;
     text-decoration: none;
-    font-size: 25px;
+    width: 200px;
     color: #818181;
     display: block;
     transition: 0.3s;
   }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
+
+  .sidenav a span{
+    display: none;
+  }
+
+  .mystyle a span{
+    margin-left: 15px;
+    display: inline;
+    transition: linear 0.5s;
+    animation-delay: 0.5s;
+    font: normal normal normal 14px/17px  'Roboto', sans-serif;;
+    color: #9BABC5;
+    opacity: 1;
+  }
+
+  .mystyle span.active{
+    color: #05A6F0;
   }
   
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  /* .sidenav a:hover {
+    color: #f1f1f1;
+  } */
+  
+  .sidenav .closebtn img{
+    /* margin-left: -5px; */
+    transform: rotate(180deg);
+  }
+
+  .openbtn, .closebtn{
+    margin-left: -5px;
   }
   
   #main {
     transition: margin-left .5s;
     padding: 16px;
-    margin-left:50px;
+    margin-left:80px;
+    padding-top: 70px;
+    background-color: #F9FBFC;
+    min-height:100vh;
+    border-left: 2px solid rgb(235, 232, 232);
+  }
+
+  /* top namv */
+  .searchBox{
+    position: relative;
+  }
+  .form-search{
+    display: inline-block;
+    width: 0px !important;
+  }
+
+  #header .form-control{
+    padding: 0px;
+    position: absolute;
+    left: -203px;
+    border: 0px;  
+    border-radius: 0px;
+    height: 28px;
+    font-size: 14px !important;
+    border-bottom: 1px solid rgb(190, 187, 187);
+    outline: 0;
+    width: 200px;
   }
   
-  @media screen and (max-height: 450px) {
+  /* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;width:50px;}
     .sidenav a {font-size: 18px;}
-  }
+  } */
 
 
 

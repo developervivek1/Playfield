@@ -11,30 +11,92 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customdropdown.css">
     <script src="js/script.js"></script>
 </head>
 
 <body>
-    <header class="header" id="header">
-        <div class=" header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-        <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+    <header class="header bg-white d-non" id="header">
+        <!-- <div class=" header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div> -->
+        <div><img src="img/play_field.svg" width="100" alt=""></div>
+
+        <div class="d-flex justify-content-between">
+            <div class="pe-4 searchBox d-flex"> <input type="text" id="search2" class="form-control form-search"
+                    placeholder="Search Here">
+                <a href="#" onclick="openSearch()"><img src="img/Component 14 – 1.svg" alt=""></a>
+            </div>
+            <div class="pe-3"><a href="#" class="text-dark">Help</a></div>
+            <div class="">
+                <div class="select-box">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="0" value="1" name="user_profile_list"
+                                checked="checked">
+                            <p class="select-box__input-text">EN</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="1" value="2" name="user_profile_list">
+                            <p class="select-box__input-text">US</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="2" value="3" name="user_profile_list">
+                            <p class="select-box__input-text">EU</p>
+                        </div>
+                        <img class="select-box__icon" src="img/arrow_down.svg" alt="Arrow Icon" aria-hidden="true">
+                    </div>
+                    <ul class="select-box__list">
+                        <li>
+                            <label class="select-box__option" for="0" aria-hidden="aria-hidden">EN</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="1" aria-hidden="aria-hidden">US</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="2" aria-hidden="aria-hidden">EU</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div> -->
     </header>
-    
-<div id="mySidenav" class="sidenav">
-    <a id="burger2" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display:none;">&times;</a>
-    <span id="burger" style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-  
-  <div id="main">
-    <h2>Sidenav Push Example</h2>
-    <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
-    
-  </div>
-    
+
+    <div id="mySidenav" class="sidenav">
+        <a id="burger2" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display:none;"><img
+                src="img/close.svg" width="24" alt=""><span>Collapse</span></a>
+        <a id="burger" href="#" class="openbtn" onclick="openNav()"><img src="img/close.svg" width="24"
+                alt=""><span>Collapse</span></a>
+        <a href="#" class="active"><img src="img/home.svg" alt=""> <span class="active">Home</span></a>
+        <a href="#"><img src="img/football.svg" alt=""> <span>Playfield</span></a>
+        <a href="#"><img src="img/profile.svg" alt=""> <span>Ownership</span></a>
+        <a href="#"><img src="img/whistle.svg" alt=""> <span>Coach</span></a>
+        <a href="#"><img src="img/pie.svg" alt=""> <span>Website Analytics</span></a>
+    </div>
+
+    <div id="main">
+        <h2>some contents will go here...</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <br><br><br><br>
+        <h2>some contents will go here...</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <br><br><br><br>
+        <h2>some contents will go here...</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <br><br><br><br>
+        <h2>some contents will go here...</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <br><br><br><br>
+        <h2>some contents will go here...</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <br><br><br><br>
+        <h2>some contents will go here...</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <br><br><br><br>
+        <h2>some contents will go here...</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <br><br><br><br>
+    </div>
+
 
 
 
