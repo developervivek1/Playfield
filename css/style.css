@@ -1,140 +1,141 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 
 :root {
-    --header-height: 3.5rem;
-    --nav-width: 68px;
-    --body-font: 'Roboto', sans-serif;
-    --z-fixed: 100
+  --header-height: 3.5rem;
+  --nav-width: 68px;
+  --body-font: 'Roboto', sans-serif;
+  --z-fixed: 100
 }
 
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
 
 
 body {
-    position: relative;
-    /* margin: var(--header-height) 0 0 0; */
-    padding: 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    transition: .5s;
+  position: relative;
+  /* margin: var(--header-height) 0 0 0; */
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header {
-    width: 100%;
-    height: var(--header-height);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-    background-color: var(--white-color);
-    z-index: var(--z-fixed);
-    transition: .5s;
-    border-bottom: 1px solid rgb(235, 232, 232);
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: var(--white-color);
+  z-index: var(--z-fixed);
+  transition: .5s;
+  border-bottom: 1px solid rgb(235, 232, 232);
 }
 
 .sidenav {
-    height: 100%;
-    width: 80px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #FFFFFF;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    /* border-right: 1px solid rgb(165, 161, 161); */
-  }
-  
-  .sidenav a {
-    padding: 15px 8px 15px 32px;
-    text-decoration: none;
-    width: 200px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  /* border-right: 1px solid rgb(165, 161, 161); */
+}
 
-  .sidenav a span{
-    display: none;
-  }
+.sidenav a {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  width: 200px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
-  .mystyle a span{
-    margin-left: 15px;
-    display: inline;
-    transition: linear 0.5s;
-    animation-delay: 0.5s;
-    font: normal normal normal 14px/17px  'Roboto', sans-serif;;
-    color: #9BABC5;
-    opacity: 1;
-  }
+.sidenav a span {
+  display: none;
+}
 
-  .mystyle span.active{
-    color: #05A6F0;
-  }
-  
-  /* .sidenav a:hover {
+.mystyle a span {
+  margin-left: 15px;
+  display: inline;
+  transition: linear 0.5s;
+  animation-delay: 0.5s;
+  font: normal normal normal 14px/17px 'Roboto', sans-serif;
+  ;
+  color: #9BABC5;
+  opacity: 1;
+}
+
+.mystyle span.active {
+  color: #05A6F0;
+}
+
+/* .sidenav a:hover {
     color: #f1f1f1;
   } */
-  
-  .sidenav .closebtn img{
-    /* margin-left: -5px; */
-    transform: rotate(180deg);
-  }
 
-  .openbtn, .closebtn{
-    margin-left: -5px;
-  }
+.sidenav .closebtn img {
+  /* margin-left: -5px; */
+  transform: rotate(180deg);
+}
 
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-    margin-left:80px;
-    padding-top: 70px;
-    background-color: #F9FBFC;
-    min-height:100vh;
-    border-left: 2px solid rgb(235, 232, 232);
-  }
+.openbtn, .closebtn {
+  margin-left: -5px;
+}
 
-  /* top namv */
-  .searchBox{
-    position: relative;
-  }
-  .form-search{
-    display: inline-block;
-    width: 0px !important;
-  }
 
-  #header .form-control{
-    padding: 0px;
-    position: absolute;
-    left: -203px;
-    border: 0px;  
-    border-radius: 0px;
-    height: 28px;
-    font-size: 14px !important;
-    border-bottom: 1px solid rgb(190, 187, 187);
-    outline: 0;
-    width: 200px;
-  }
-  
-  /* @media screen and (max-height: 450px) {
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 80px;
+  padding-top: 70px;
+  background-color: #F9FBFC;
+  min-height: 100vh;
+  border-left: 2px solid rgb(235, 232, 232);
+}
+
+/* top namv */
+.searchBox {
+  position: relative;
+}
+
+.form-search {
+  display: inline-block;
+  width: 0px !important;
+}
+
+#header .form-control {
+  padding: 0px;
+  position: absolute;
+  left: -203px;
+  border: 0px;
+  border-radius: 0px;
+  height: 28px;
+  font-size: 14px !important;
+  border-bottom: 1px solid rgb(190, 187, 187);
+  outline: 0;
+  width: 200px;
+}
+
+/* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;width:50px;}
     .sidenav a {font-size: 18px;}
   } */
@@ -142,16 +143,16 @@ a {
 
 
 
-  /* sign in */
+/* sign in */
 
-  .signIn .div-left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F9FBFC;
-    padding: 1.5rem 0rem;
-    min-height: 100vh;
-  }
+.signIn .div-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9FBFC;
+  padding: 1.5rem 0rem;
+  min-height: 100vh;
+}
 
 .carousel-indicators button.active {
   opacity: 1;
@@ -160,13 +161,13 @@ a {
   transition: all 0.5s;
 }
 
-.carousel-indicators{
+.carousel-indicators {
   margin-bottom: 0px;
   bottom: -6px;
- 
+
 }
 
-.carousel-indicators button{
+.carousel-indicators button {
   border-radius: 50px;
 }
 
@@ -190,41 +191,41 @@ a {
   transition: all 0.5s;
 }
 
-  .signIn .div-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    min-height: 100vh;
-    padding: 1.5rem 0rem;
-  }
+.signIn .div-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  min-height: 100vh;
+  padding: 1.5rem 0rem;
+}
 
-  /* Solid border */
-  hr.hl {
-    border: 2px solid #05A6F0;
-    width: 30px;
-    opacity: inherit;
-  }
+/* Solid border */
+hr.hl {
+  border: 2px solid #05A6F0;
+  width: 30px;
+  opacity: inherit;
+}
 
-  .div-left p{
-    text-align: center;
-    font: normal normal normal 15px/24px Roboto;
-    letter-spacing: 0px;
-    color: #6E6D7A;
-    opacity: 1;
-  }
+.div-left p {
+  text-align: center;
+  font: normal normal normal 15px/24px Roboto;
+  letter-spacing: 0px;
+  color: #6E6D7A;
+  opacity: 1;
+}
 
 
-  /* form modified */
+/* form modified */
 
-  .form-floating>.form-control, .form-floating>.form-select {
-    height: calc(3rem + 2px);
-  }
-  
-  .form-floating>label {
-    position: absolute;
-    padding: .8rem .75rem;
-  }
+.form-floating>.form-control, .form-floating>.form-select {
+  height: calc(3rem + 2px);
+}
+
+.form-floating>label {
+  position: absolute;
+  padding: .8rem .75rem;
+}
 
 
 .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
@@ -235,13 +236,15 @@ a {
   background: white;
   transform: scale(.95) translateY(-1.5rem) translateX(.75rem);
 }
+
 .form-floating>.form-control {
   padding: 1rem 1.5rem;
 }
 
-.form-control{
+.form-control {
   font-size: 1rem;
 }
+
 .form-control:focus {
   color: #212529;
   background-color: #fff;
@@ -261,32 +264,33 @@ a {
   border-color: #05A6F0;
 }
 
-.form-check .form-check-label{
+.form-check .form-check-label {
   font-size: 13px;
 }
 
-.form-check .form-check-label a{
+.form-check .form-check-label a {
   color: #05A6F0;
 }
 
-form .btn-color{
-  background:#05A6F0;
+form .btn-color {
+  background: #05A6F0;
 }
 
-form p{
+form p {
   font-size: 13px;
 }
-form p a{
+
+form p a {
   color: #05A6F0;
 }
 
-.formDiv{
+.formDiv {
   width: 60%;
 }
 
 /* form closed */
 
-.carousel-item img{
+.carousel-item img {
   width: 400px;
   height: 285px;
 }
