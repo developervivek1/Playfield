@@ -69,6 +69,11 @@ a {
   transition: 0.3s;
 }
 
+.sidenav .powerButton{
+  position: absolute;
+
+  bottom: 30px;
+}
 .sidenav a span {
   display: none;
 }
@@ -79,7 +84,6 @@ a {
   transition: linear 0.5s;
   animation-delay: 0.5s;
   font: normal normal normal 14px/17px 'Roboto', sans-serif;
-  ;
   color: #9BABC5;
   opacity: 1;
 }
@@ -164,7 +168,6 @@ a {
 .carousel-indicators {
   margin-bottom: 0px;
   bottom: -6px;
-
 }
 
 .carousel-indicators button {
