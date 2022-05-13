@@ -51,3 +51,5 @@ if (mediaQuery.matches) {
     document.getElementById("main").style.backgroundColor = "transparent";
   }
 }
+
+document.getElementsByTagName("svg").style.width="100%";

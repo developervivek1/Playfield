@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.093" y1="0.089" x2="1.358" y2="1.351" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#54b5fa"/>
+      <stop offset="1" stop-color="#9ed5fc"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_49438" data-name="Group 49438" transform="translate(-594 -220)">
+    <path id="Path_53463" data-name="Path 53463" d="M9,0H36a9,9,0,0,1,9,9V36a9,9,0,0,1-9,9H9a9,9,0,0,1-9-9V9A9,9,0,0,1,9,0Z" transform="translate(639 265) rotate(180)" opacity="0.23" fill="url(#linear-gradient)"/>
+    <g id="noun-athlete-2767841" transform="translate(473.409 190.797)">
+      <path id="Path_53354" data-name="Path 53354" d="M147.49,39.2a24.405,24.405,0,0,0-2.465,3.963,4.4,4.4,0,0,0-.178,3.841c.834,1.507,2.806,2.1,5.147,2.41,1.5.2,3.156.275,4.828.339-1.556.226-3.077.409-4.415.649-1.971.395-3.88.971-4.706,2.664-.808,1.952,0,4.238,1.406,6.457a33.489,33.489,0,0,0,3.984,4.885,44.075,44.075,0,0,1-9.356-7.191,7.086,7.086,0,0,1-2.044-5.535c1.279-6.124,3.749-8.958,7.8-12.482Zm.919,3.464a2.692,2.692,0,1,0,2.719,2.692A2.707,2.707,0,0,0,148.409,42.667Zm-9.281,9.582a8.031,8.031,0,0,0,1.772,4.866,8.509,8.509,0,0,0-6.056,2.3,17.26,17.26,0,0,0-3.253,5.4c.013-5.117,3.11-9.3,7.537-12.567Z" transform="translate(0 0)" fill="#54b5fa"/>
+    </g>
+  </g>
+</svg>

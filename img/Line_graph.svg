@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1138" height="533" viewBox="0 0 1138 533">
+  <defs>
+    <filter id="Statistics.BG" x="0" y="0" width="1138" height="533" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.039"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#05a6f0" stop-opacity="0.678"/>
+      <stop offset="0.961" stop-color="#f5fbfe" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_49460" data-name="Group 49460" transform="translate(-217 -1247)">
+    <g transform="matrix(1, 0, 0, 1, 217, 1247)" filter="url(#Statistics.BG)">
+      <rect id="Statistics.BG-2" data-name="Statistics.BG" width="1120" height="515" rx="6" transform="translate(9 7)" fill="#fff"/>
+    </g>
+    <g id="Group_49238" data-name="Group 49238" transform="translate(-67 32)">
+      <text id="Website_Analytics_Overview" data-name="Website Analytics Overview" transform="translate(314 1260)" font-size="18" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Website Analytics Overview</tspan></text>
+      <g id="Rectangle_12665" data-name="Rectangle 12665" transform="translate(327 1295)" fill="#fff" stroke="#adc2e1" stroke-width="1">
+        <rect width="211" height="40" rx="6" stroke="none"/>
+        <rect x="0.5" y="0.5" width="210" height="39" rx="5.5" fill="none"/>
+      </g>
+      <text id="Select_Sport" data-name="Select Sport" transform="translate(347 1319)" fill="#11142d" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Select Sport</tspan></text>
+      <path id="Icon_awesome-caret-down" data-name="Icon awesome-caret-down" d="M1.45,13.5H9.888a.655.655,0,0,1,.462,1.118L6.133,18.839a.657.657,0,0,1-.928,0L.988,14.618A.655.655,0,0,1,1.45,13.5Z" transform="translate(512.285 1298.5)" fill="#11142d"/>
+      <g id="Rectangle_12645" data-name="Rectangle 12645" transform="translate(588 1295)" fill="#7c8db5" stroke="#adc2e1" stroke-width="1" opacity="0.05">
+        <rect width="240.5" height="40" rx="5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="239.5" height="39" rx="4.5" fill="none"/>
+      </g>
+      <text id="Select_a_metric" data-name="Select a metric" transform="translate(608 1319)" fill="#4e5976" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Select a metric</tspan></text>
+      <text id="Vs" transform="translate(554.5 1321)" fill="#4e5976" font-size="15" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Vs</tspan></text>
+    </g>
+    <g id="Group_49305" data-name="Group 49305" transform="translate(143)">
+      <g id="Rectangle_12646" data-name="Rectangle 12646" transform="translate(903 1326)" fill="none" stroke="#05a6f0" stroke-width="1">
+        <rect width="280" height="40" rx="5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="279" height="39" rx="4.5" fill="none"/>
+      </g>
+      <text id="Day" transform="translate(923 1351)" fill="#05a6f0" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Day</tspan></text>
+      <text id="Week" transform="translate(985 1351)" fill="#05a6f0" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Week</tspan></text>
+      <text id="Year" transform="translate(1136 1351)" fill="#05a6f0" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Year</tspan></text>
+      <path id="Path_53456" data-name="Path 53456" d="M2801.1,1326v39.7" transform="translate(-1836.1)" fill="none" stroke="#05a6f0" stroke-width="1"/>
+      <path id="Path_53457" data-name="Path 53457" d="M2801.1,1326v39.7" transform="translate(-1764.1)" fill="none" stroke="#05a6f0" stroke-width="1"/>
+      <path id="Path_53458" data-name="Path 53458" d="M2801.1,1326v39.7" transform="translate(-1685.1)" fill="none" stroke="#05a6f0" stroke-width="1"/>
+      <rect id="Rectangle_12763" data-name="Rectangle 12763" width="79" height="39" transform="translate(1037 1327)" fill="#04a6f1"/>
+      <text id="Month" transform="translate(1059 1351)" fill="#fff" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Month</tspan></text>
+    </g>
+    <g id="Component_41_7" data-name="Component 41 – 7" transform="translate(303 1452.087)">
+      <g id="Component_37_1" data-name="Component 37 – 1">
+        <rect id="X-Axis.1" width="911.179" height="0.836" transform="translate(46 219.885)" fill="#eaf0f4"/>
+        <rect id="X-Axis.2" width="909.01" height="0.836" transform="translate(46.631 168.885)" fill="#eaf0f4"/>
+        <rect id="X-Axis.3" width="909.01" height="0.836" transform="translate(46.631 117.885)" fill="#eaf0f4"/>
+        <rect id="X-Axis.4" width="909.01" height="0.836" transform="translate(46.631 66.885)" fill="#eaf0f4"/>
+        <rect id="X-Axis.5" width="909.01" height="0.836" transform="translate(46.631 15.885)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.1" width="0.836" height="219.885" transform="translate(46)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.2" width="0.836" height="219.885" transform="translate(128)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.2-2" data-name="Y-Axis.2" width="0.836" height="219.885" transform="translate(211)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.2-3" data-name="Y-Axis.2" width="0.836" height="219.885" transform="translate(294)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.2-4" data-name="Y-Axis.2" width="0.836" height="219.885" transform="translate(377)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.2-5" data-name="Y-Axis.2" width="0.836" height="219.885" transform="translate(459)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.2-6" data-name="Y-Axis.2" width="0.836" height="219.885" transform="translate(542)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.2-7" data-name="Y-Axis.2" width="0.836" height="219.885" transform="translate(625)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.2-8" data-name="Y-Axis.2" width="0.836" height="219.885" transform="translate(708)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.2-9" data-name="Y-Axis.2" width="0.836" height="219.885" transform="translate(790)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.2-10" data-name="Y-Axis.2" width="0.836" height="219.885" transform="translate(873)" fill="#eaf0f4"/>
+        <rect id="Y-Axis.6" width="0.836" height="219.885" transform="translate(956)" fill="#eaf0f4"/>
+        <text id="Jan" transform="translate(46 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Jan</tspan></text>
+        <text id="Feb" transform="translate(118 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Feb</tspan></text>
+        <text id="Mar" transform="translate(200 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Mar</tspan></text>
+        <text id="Apr" transform="translate(284 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Apr</tspan></text>
+        <text id="May" transform="translate(366 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">May</tspan></text>
+        <text id="Jun" transform="translate(448 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Jun</tspan></text>
+        <text id="Jul" transform="translate(532 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Jul</tspan></text>
+        <text id="Aug" transform="translate(617 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Aug</tspan></text>
+        <text id="Sep" transform="translate(697 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Sep</tspan></text>
+        <text id="Oct" transform="translate(780 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Oct</tspan></text>
+        <text id="Nov" transform="translate(864 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Nov</tspan></text>
+        <text id="Dec" transform="translate(945 239.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Dec</tspan></text>
+        <text id="_0" data-name="0" transform="translate(0 218.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">0</tspan></text>
+        <text id="_500" data-name="500" transform="translate(0 167.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">500</tspan></text>
+        <text id="_1000" data-name="1000" transform="translate(0 117.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">1000</tspan></text>
+        <text id="_1500" data-name="1500" transform="translate(0 65.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">1500</tspan></text>
+        <text id="_2000" data-name="2000" transform="translate(0 14.913)" fill="#6e6d7a" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">2000</tspan></text>
+        <path id="Path_53401" data-name="Path 53401" d="M1853.68,1582l81.253-52.133,83.2,30.933,84.267-50.133,82.133,27.733,81.066-14.933,82.667,47.467,84.267-60.267,83.2,12.8,82.133,47.467,23.667-19.979L2680,1501.6l83.2,28.267V1632.9H1853.68Z" transform="translate(-1807 -1413.187)" fill="url(#linear-gradient)"/>
+        <path id="Path_53402" data-name="Path 53402" d="M1853.68,1582l81.253-52.133,83.2,30.933,84.267-50.133,82.133,27.733,81.066-14.933,82.667,47.467,84.267-60.267,83.2,12.8,82.133,47.467,23.667-19.979L2680,1501.6l83.2,28.267" transform="translate(-1807 -1411.552)" fill="none" stroke="#05a6f0" stroke-width="2"/>
+        <g id="Jan.Ellipse" transform="translate(42.66 164.738)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-2" data-name="Jan.Ellipse" transform="translate(124.484 113.545)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-3" data-name="Jan.Ellipse" transform="translate(206.484 142.545)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-4" data-name="Jan.Ellipse" transform="translate(290.242 95.562)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-5" data-name="Jan.Ellipse" transform="translate(372.484 121.897)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-6" data-name="Jan.Ellipse" transform="translate(455.484 106.341)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-7" data-name="Jan.Ellipse" transform="translate(538.242 152.897)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-8" data-name="Jan.Ellipse" transform="translate(621.242 93.386)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-9" data-name="Jan.Ellipse" transform="translate(704.242 106.341)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-10" data-name="Jan.Ellipse" transform="translate(787.242 152.897)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-11" data-name="Jan.Ellipse" transform="translate(869.242 85.035)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+        <g id="Jan.Ellipse-12" data-name="Jan.Ellipse" transform="translate(952.242 113.709)" fill="#fff" stroke="#05a6f0" stroke-width="2">
+          <circle cx="4.176" cy="4.176" r="4.176" stroke="none"/>
+          <circle cx="4.176" cy="4.176" r="3.176" fill="none"/>
+        </g>
+      </g>
+      <g id="Component_40_1" data-name="Component 40 – 1" transform="translate(259 36.913)" opacity="0">
+        <rect id="Rectangle_12874" data-name="Rectangle 12874" width="56" height="25" rx="5" transform="translate(4 27)" fill="#05a6f0"/>
+        <g id="Group_49372" data-name="Group 49372" transform="translate(-508 -1489)">
+          <rect id="Rectangle_12873" data-name="Rectangle 12873" width="68" height="54" rx="5" transform="translate(508 1489)" fill="#fff"/>
+          <text id="April" transform="translate(529 1509)" fill="#11142d" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">April</tspan></text>
+          <text id="_1325" data-name="1325" transform="translate(527 1529)" fill="#11142d" font-size="14" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">1325</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

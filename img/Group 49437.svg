@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.093" y1="0.089" x2="1.378" y2="1.502" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#90bbfc"/>
+      <stop offset="1" stop-color="#fce8dd"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_49437" data-name="Group 49437" transform="translate(-360 -220)">
+    <path id="Path_53462" data-name="Path 53462" d="M9,0H36a9,9,0,0,1,9,9V36a9,9,0,0,1-9,9H9a9,9,0,0,1-9-9V9A9,9,0,0,1,9,0Z" transform="translate(405 265) rotate(180)" opacity="0.23" fill="url(#linear-gradient)"/>
+    <g id="noun-whistle-1678816" transform="translate(245.179 87.731) rotate(3)">
+      <path id="Path_53398" data-name="Path 53398" d="M373.334,305.921a2.589,2.589,0,1,0,2.589-2.589,2.589,2.589,0,0,0-2.589,2.589" transform="translate(-232.481 -156.859)" fill="#5b84c6"/>
+      <path id="Path_53399" data-name="Path 53399" d="M125.724,186.67H141.9a.647.647,0,0,1,.647.647v5.177a.647.647,0,0,1-.543.647l-7.339,1.184a8.841,8.841,0,0,1,.116,1.4,9.06,9.06,0,1,1-9.06-9.06Zm0,12.943a3.883,3.883,0,1,0-2.745-1.137A3.882,3.882,0,0,0,125.724,199.612Z" transform="translate(17.717 -46.668)" fill="#5b84c6"/>
+    </g>
+  </g>
+</svg>
