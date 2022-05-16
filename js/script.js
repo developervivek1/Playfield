@@ -48,12 +48,7 @@ if (mediaQuery.matches) {
     document.getElementById("main").style.marginLeft= "0px";
     document.getElementById("burgersm2").style.display = "none";
     document.getElementById("burgersm").style.display = "block";
-    document.getElementById("main").style.backgroundColor = "transparent";
     document.getElementById("opacityDiv").style.display = "none";
-  }
-
-  function closeNav(){
-    
   }
 }
 
