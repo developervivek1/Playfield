@@ -459,6 +459,12 @@ color: #05A6F0;
 opacity: 1;
 }
 
+.barChart2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .progressDiv{
   
 background: transparent linear-gradient(209deg, #ECF6FF 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;

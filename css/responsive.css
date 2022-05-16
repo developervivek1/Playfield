@@ -22,4 +22,19 @@
     margin-bottom: .5rem;
   }
 
+
+element.style {
+  min-height: 414px;
+}
+.barChart2 {
+  margin-top: 1.5rem;
+  display: block;
+}
+
+  #myChart{
+    height: 375px !important;
+    width: 75vw !important;
+
+  }
+
 }

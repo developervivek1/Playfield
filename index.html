@@ -191,7 +191,7 @@
 
                 </div>
                 <div class="col-md-3">
-                    <div class="chartDiv p-4">
+                    <div class="chartDiv mt-4 mt-md-0 p-4">
                         <h6>Disciplines</h6>
                         <p>This data helps you to visualize the <br> frequency of playfield Available in India</p>
 
@@ -202,7 +202,7 @@
                                 <h3>Disciplines</h3>
                             </div>
 
-                            <div class="d-flex">
+                            <div class="d-flex justify-content-between">
 
 
                                 <ul class="ps-3">
@@ -211,7 +211,7 @@
                                     <li><data value="0.55" data-color="#F47122">Kabbadi</data> <span>16%</span></li>
                                 </ul>
 
-                                <ul class="ps-5">
+                                <ul class="float-end ps-5">
                                     <li><data value="0.45" data-color="#FFBB59">Volleyball</data> <span>12%</span></li>
                                     <li><data value="0.25" data-color="#A3A0FB">Football</data> <span>20%</span></li>
                                     <li><data value="0.15" data-color="#593FE7">Others</data> <span>8%</span></li>
@@ -220,7 +220,7 @@
                             </div>
                         </div>
 
-                        <p class="listed">* Top 5 Sports Listed Here</p>
+                        <p class="listed mb-2">* Top 5 Sports Listed Here</p>
                     </div>
                 </div>
 
@@ -228,18 +228,21 @@
 
             <div class="row mt-4">
                 <div class="col-md-9">
-                    <div class="barChartDiv bg-white p-4">
+                    <div class="barChartDiv shadow-sm rounded bg-white p-4" >
                         <div class="d-flex justify-content-between">
                             <h6>Coach Dashboard</h6>
                             <p>View Coach Dasboard</p>
                         </div>
+                        <div class="barChart2" style="min-height: 414px;">
 
-                        <div class="barChart1">
+                            <div class="barChart1 w-75">
 
-                            <center>
-                                <div class="w-75"> <canvas id="myChart" class=""></canvas> </div>
-                            </center>
+                                <center>
+                                    <div> <canvas id="myChart" class=""  style="height: 50vh;"></canvas> </div>
+                                </center>
 
+
+                            </div>
 
                         </div>
                     </div>
@@ -247,7 +250,7 @@
                 </div>
 
                 <div class="col-md-3">
-                    <div class="progressDiv p-4">
+                    <div class="progressDiv mt-4 mt-md-0 p-4" style="min-height: 500px;">
                         <h4 class="mb-0">Ownership Dashboard</h4>
                        
                         <a href="#">View Dasboard</a>
@@ -346,6 +349,7 @@
                     // backgroundColor: '#E5F6FE',
                     backgroundColor: ["#E5F6FE", "#E5F6FE", "#E5F6FE", "#FFBB59", "#E5F6FE", "#E5F6FE",],
                 },
+                
                 ]
             },
 
@@ -355,6 +359,7 @@
                 barPercentage: 0.3,
 
                 plugins: {
+                    
                     legend: {
                         display: false
                     },
@@ -365,7 +370,21 @@
                             size: 14
                         }
                     },
+
+                    afterDraw: chart => {
+    var ctx = chart.chart.ctx;
+    var xAxis = chart.scales['x-axis-0'];
+    var yAxis = chart.scales['y-axis-0'];
+    xAxis.ticks.forEach((value, index) => {
+      var x = xAxis.getPixelForTick(index);
+      var image = new Image();
+      image.src = images[index],
+        ctx.drawImage(image, x - 12, yAxis.bottom + 10);
+    });
+  },
                 },
+
+
 
                 responsive: true,
                 scales: {
