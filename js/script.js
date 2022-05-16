@@ -34,7 +34,7 @@ if (mediaQuery.matches) {
     element.classList.add("mystyle");
     document.getElementById("mySidenav").style.width = "80%";
     document.getElementById("mySidenav").style.zIndex = "999";
-    document.getElementById("main").style.backgroundColor = "grey";
+    document.getElementById("opacityDiv").style.display = "block";
     document.getElementById("main").style.marginLeft = "0px";
     document.getElementById("burgersm").style.display = "none";
     document.getElementById("burgersm2").style.display = "block";
@@ -49,6 +49,11 @@ if (mediaQuery.matches) {
     document.getElementById("burgersm2").style.display = "none";
     document.getElementById("burgersm").style.display = "block";
     document.getElementById("main").style.backgroundColor = "transparent";
+    document.getElementById("opacityDiv").style.display = "none";
+  }
+
+  function closeNav(){
+    
   }
 }
 
