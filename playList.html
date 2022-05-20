@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+ 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customdropdown.css">
+    <link rel="stylesheet" href="js/script.js">
+</head>
+
+<body>
+  <header class="header bg-white d-non" id="header">
+    <div class="d-block d-md-none">
+        <!-- <a id="burgersm2" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display:none;"><img
+            src="img/close.svg" width="24" alt=""></a> -->
+        <a id="burgersm" href="#" class="openbtn" onclick="openNav()"><img src="img/noun-menu-705116.svg" width="24"
+                alt=""></a>
+    </div>
+
+    <!-- <div class=" header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div> -->
+    <div class="d-none d-md-block"><img src="img/play_field.svg" width="100" alt=""></div>
+
+    <div class="d-flex justify-content-between">
+        <div class="pe-3 pe-md-4 searchBox d-flex"> <input type="text" id="search2" class="form-control form-search"
+                placeholder="Search Here">
+            <a href="#" onclick="openSearch()"><img src="img/Component 14 – 1.svg" alt=""></a>
+        </div>
+        <div class="pe-2 pe-md-3"><a href="#" class="text-dark">Help</a></div>
+        <div class="">
+            <div class="select-box">
+                <div class="select-box__current" tabindex="1">
+                    <div class="select-box__value">
+                        <input class="select-box__input" type="radio" id="0" value="1" name="user_profile_list"
+                            checked="checked">
+                        <p class="select-box__input-text">EN</p>
+                    </div>
+                    <div class="select-box__value">
+                        <input class="select-box__input" type="radio" id="1" value="2" name="user_profile_list">
+                        <p class="select-box__input-text">US</p>
+                    </div>
+                    <div class="select-box__value">
+                        <input class="select-box__input" type="radio" id="2" value="3" name="user_profile_list">
+                        <p class="select-box__input-text">EU</p>
+                    </div>
+                    <img class="select-box__icon" src="img/arrow_down.svg" alt="Arrow Icon" aria-hidden="true">
+                </div>
+                <ul class="select-box__list">
+                    <li>
+                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">EN</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">US</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">EU</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div> -->
+</header>
+
+<div id="mySidenav" class="sidenav">
+    <div class="d-flex d-md-none border-bottom">
+        <a class="ps-3 pt-2 pb-1" href="#"><img src="img/play_field.svg" width="100" alt=""></a>
+        <a id="burgersm2" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display:none;"><img
+                class="float-end ps-3" src="img/noun-close-4619407 (1).svg" alt=""></a>
+    </div>
+
+    <div class="d-none d-md-block">
+        <a id="burger2" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display:none;"><img
+                src="img/close.svg" width="24" alt=""><span>Collapse</span></a>
+        <a id="burger" href="#" class="openbtn" onclick="openNav()"><img src="img/close.svg" width="24"
+                alt=""><span>Collapse</span></a>
+    </div>
+
+
+    <a href="#" class="active"><img src="img/home.svg" alt=""> <span class="active">Home</span></a>
+    <a href="#"><img src="img/football.svg" alt=""> <span>Playfield</span></a>
+    <a href="#"><img src="img/profile.svg" alt=""> <span>Ownership</span></a>
+    <a href="#"><img src="img/whistle.svg" alt=""> <span>Coach</span></a>
+    <a href="#"><img src="img/pie.svg" alt=""> <span>Website Analytics</span></a>
+
+    <a href="signIn.html" class="powerButton"><img src="img/noun-on-off-3556996.svg" alt=""> <span>Switch</span></a>
+</div>
+
+    <div id="main">
+
+    <div class="playfield_overview">
+      <div class="listOverlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="head">
+            <h3>Playfield Overview</h3>
+            <div class="d-flex btnDiv">
+              <p class="tab-btn" data-target=".dashboard_view">Dashboard</p>
+              <p class="tab-btn active" data-target=".list_view">List View</p>
+            </div>
+          </div>
+            <div class="d-md-flex justify-content-between">
+              <div class="left_div d-flex">
+                <div class="select-box">
+                  <div class="options-container">
+                    <div class="search-box">
+                      <input type="text" class="search_input" placeholder="Search">
+                    </div>
+                    <div class="inside_option">
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport1">                  
+                          <label for="sport1">All</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport2">                  
+                          <label for="sport2">Cricket</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport3">                  
+                          <label for="sport3">Football</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport4">                  
+                          <label for="sport4">Hockey</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport5">                  
+                          <label for="sport5">Polo</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport6">                  
+                          <label for="sport6">Carrom</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport7">                  
+                          <label for="sport7">Ludo</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport8">                  
+                          <label for="sport8">Kabaddi</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport9">                  
+                          <label for="sport9">Redmi Note 8</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport10">
+                          <label for="sport10">Redmi Note 8 Pro</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport11">
+                          <label for="sport11">Redmi 8</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport12">
+                          <label for="sport12">Redmi 8A</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport13">
+                          <label for="sport13">Redmi k20</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option" id="sport14">
+                          <label for="sport14">Redmi k20 Pro</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- inside option closed -->
+                  </div>
+                  <!-- options-container closed -->
+                  <div class="selected">
+                    Select Sport
+                  </div>
+                </div>
+                <div class="select-box">
+                  <div class="options-container">
+                    <div class="search-box">
+                      <input type="text" class="search_input" placeholder="Search">
+                    </div>
+                    <div class="inside_option">
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state1">                  
+                          <label for="state1">All</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state2">                  
+                          <label for="state2">AP - Andhra Pradesh</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state3">                  
+                          <label for="state3">AP - Arunachal Pradesh</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state4">                  
+                          <label for="state4">AS - Assam</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state5">                  
+                          <label for="state5">BR - Bihar</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state6">                  
+                          <label for="state6">MH - Maharashtra</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state7">                  
+                          <label for="state7">UP - Uttar Pradesh</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state8">                  
+                          <label for="state8">WB - West Bengal</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state9">                  
+                          <label for="state9">GJ - Gujarat</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state10">
+                          <label for="state10">Redmi Note 8 Pro</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state11">
+                          <label for="state11">Redmi 8</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state12">
+                          <label for="state12">Redmi 8A</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state13">
+                          <label for="state13">Redmi k20</label>
+                        </div>
+                      </div>
+                      <div class="mainoption">
+                        <div class="option">
+                          <input type="checkbox" name="option2" id="state14">
+                          <label for="state14">Redmi k20 Pro</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- inside option closed -->
+                  </div>
+                  <!-- options container closed -->
+                  <div class="selected">
+                    Select State
+                  </div>
+                </div>
+              </div>
+              <!-- left div closed -->
+              <div class="right_div d-md-flex justify-content-md-end">
+                <div class="search mr-2">
+                  <input type="text" name="" id="" placeholder="Search Here">
+                  <img src="img/searchIcon.svg" alt="search">
+                </div>
+                <div class="create">
+                    <button>
+                      <img src="img/plus.svg" alt="create">
+                      Create New
+                    </button>
+                </div>
+                <div class="export">
+                    <button>
+                      <img src="img/export.svg" alt="">
+                      Export
+                    </button>
+                    <div class="showExport">
+                      <div class="row">
+                        <div class="d-flex align-items-center">
+                            <img src="img/pdficon.svg" alt="pdf" style="width: 12px;">
+                            <P>Export PDF</P>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img src="img/msexcel.svg" alt="Excel">
+                          <P>Export Excel</P>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- right div closed -->
+            </div>
+            <div class="tab-content">
+              <div class="tabCon dashboard_view">
+                <p>Dashboard Content</p>
+              </div>
+              <div class="tabCon active list_view">
+                <div class="overflow_control">
+                  <table>
+                    <tr class="thead">
+                        <td>
+                          <input type="checkbox" name="" id=""> 
+                          <p>Playfield Name</p>
+                        </td>
+                        <td>
+                          <p>State</p>
+                        </td>
+                        <td>
+                          <p>District</p>
+                        </td>
+                        <td>
+                          <p>Ownership</p>
+                        </td>
+                        <td>
+                          <p>Disciplines</p>
+                        </td>
+                        <td>
+                          <p>Playfield Type</p>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="d-flex align-items-center">
+                        <input type="checkbox" name="" id="">
+                        <img src="img/sport.jpg" alt="">
+                        <p>Playfield Name 001</p>
+                      </td>
+                      <td>
+                        <p>KA</p>
+                      </td>
+                      <td>
+                        <p>Udupi</p>
+                      </td>
+                      <td>
+                        <p>State Government</p>
+                      </td>
+                      <td>
+                        <p>Cricket, Football</p>
+                      </td>
+                      <td>
+                        <p>Grassy</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-flex align-items-center">
+                        <input type="checkbox" name="" id="">
+                        <img src="img/sport.jpg" alt="">
+                        <p>Playfield Name 002</p>
+                      </td>
+                      <td>
+                        <p>KL</p>
+                      </td>
+                      <td>
+                        <p>Ernakulam</p>
+                      </td>
+                      <td>
+                        <p>Univercity</p>
+                      </td>
+                      <td>
+                        <p>Kabaddi</p>
+                      </td>
+                      <td>
+                        <p>Natural</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-flex align-items-center">
+                        <input type="checkbox" name="" id="">
+                        <img src="img/sport.jpg" alt="">
+                        <p>Playfield Name 003</p>
+                      </td>
+                      <td>
+                        <p>TN</p>
+                      </td>
+                      <td>
+                        <p>Madhurai</p>
+                      </td>
+                      <td>
+                        <p>Municipal Department</p>
+                      </td>
+                      <td>
+                        <p>Football Cricket</p>
+                      </td>
+                      <td>
+                        <p>Grassy</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-flex align-items-center">
+                        <input type="checkbox" name="" id="">
+                        <img src="img/sport.jpg" alt="">
+                        <p>Playfield Name 004</p>
+                      </td>
+                      <td>
+                        <p>AP</p>
+                      </td>
+                      <td>
+                        <p>Palnadu</p>
+                      </td>
+                      <td>
+                        <p>Govt School</p>
+                      </td>
+                      <td>
+                        <p>Hockey</p>
+                      </td>
+                      <td>
+                        <p>Grassy</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-flex align-items-center">
+                        <input type="checkbox" name="" id="">
+                        <img src="img/sport.jpg" alt="">
+                        <p>Playfield Name 005</p>
+                      </td>
+                      <td>
+                        <p>AS</p>
+                      </td>
+                      <td>
+                        <p>Nagaon</p>
+                      </td>
+                      <td>
+                        <p>Private College</p>
+                      </td>
+                      <td>
+                        <p>Volleyball</p>
+                      </td>
+                      <td>
+                        <p>Cemented</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-flex align-items-center">
+                        <input type="checkbox" name="" id="">
+                        <img src="img/sport.jpg" alt="">
+                        <p>Playfield Name 005</p>
+                      </td>
+                      <td>
+                        <p>AS</p>
+                      </td>
+                      <td>
+                        <p>Nagaon</p>
+                      </td>
+                      <td>
+                        <p>Private College</p>
+                      </td>
+                      <td>
+                        <p>Volleyball</p>
+                      </td>
+                      <td>
+                        <p>Cemented</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-flex align-items-center">
+                        <input type="checkbox" name="" id="">
+                        <img src="img/sport.jpg" alt="">
+                        <p>Playfield Name 005</p>
+                      </td>
+                      <td>
+                        <p>AS</p>
+                      </td>
+                      <td>
+                        <p>Nagaon</p>
+                      </td>
+                      <td>
+                        <p>Private College</p>
+                      </td>
+                      <td>
+                        <p>Volleyball</p>
+                      </td>
+                      <td>
+                        <p>Cemented</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="row d-flex justify-content-between mt-5">
+                  <div class="col-md-6 d-flex page_target align-items-center">
+                    <p class="me-3">Goto page</p>
+                    <input type="text" name="page" id="">
+                    <span>Go</span>
+                  </div>
+                  <div class="col-md-6 d-flex paginationDiv justify-content-md-end">
+                    <div class="pagination">
+                      <button class="prev"><img src="img/left.svg" alt="left"></button>
+                      <button class="page_num active">1</button>
+                      <button class="page_num">2</button>
+                      <button class="page_num">3</button>
+                      <button class="page_num">4</button>
+                      <button class="page_num">5</button>
+                      <div class="gap_part mx-md-4">....</div>
+                      <button class="page_num">30</button>
+                      <button class="next"><img src="img/Right.svg" alt="left"></button>
+                    </div>
+                    <select name="" id="">
+                      <option value="10">10 / Page</option>
+                      <option value="20">20 / Page</option>
+                      <option value="30">30 / Page</option>
+                      <option value="40">40 / Page</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- list view closed -->
+            </div>
+        </div>
+      </div>
+      <!-- container closed -->
+    </div>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,73 @@
+const menuTrigger = document.querySelector('header #burgersm');
+const mobilemenu = document.querySelector('#mySidenav');
+const closemenu = document.querySelector('#mySidenav #burgersm2');
+const menuOverlay = document.querySelector('.menuOverlay');
+const sidenav = document.querySelector('#mySidenav');
+const body = document.querySelector('body');
+
+menuTrigger.addEventListener('click',(e)=>
+{
+  let body = e.target.closest('body');
+  if(!mobilemenu.classList.contains('active'))
+  {
+    body.style.overflow="hidden";
+    menuOverlay.classList.add('active');
+    mobilemenu.classList.add('active');
+  }
+  else
+  {
+    body.style.overflow="auto";
+    menuOverlay.classList.remove('active');
+    mobilemenu.classList.remove('active');
+  }
+})
+
+closemenu.addEventListener('click',(e)=>
+{
+  let body = e.target.closest('body');
+  if(mobilemenu.classList.contains('active'))
+  {
+    openSidemnu(body);
+  }
+})
+
+menuOverlay.addEventListener('click',(e)=>
+{
+  let body = e.target.closest('body');
+  if(mobilemenu.classList.contains('active'))
+  {
+    openSidemnu(body);
+  }
+})
+
+function openSidemnu(body)
+{
+  body.style.overflow="auto";
+  menuOverlay.classList.remove('active');
+  mobilemenu.classList.remove('active');
+}
+
+const windowEventList = ['load', 'resize'];
+windowEventList.forEach(function(e) {
+  window.addEventListener(e, setzIndex);
+});
+
+function setzIndex(e)
+{
+   if(e.type==="load" || e.type==="resize")
+   {
+    let bodyWidth = body.clientWidth;
+    if(bodyWidth > 849)
+    {
+      sidenav.style.zIndex = 40;
+    }
+    else
+    {
+      sidenav.style.zIndex = 100;
+    }
+   }
+}
+
 function openNav() {
     var element = document.getElementById("mySidenav");
     element.classList.add("mystyle");
@@ -52,4 +122,4 @@ if (mediaQuery.matches) {
   }
 }
 
-document.getElementsByTagName("svg").style.width="100%";
+// document.getElementsByTagName("svg").style.width="100%";
