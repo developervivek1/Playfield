@@ -1,0 +1,131 @@
+@media (max-width:600px){
+    .formDiv{
+        width: 80%;
+      }
+
+}
+
+
+@media (max-width:849px){
+
+  header
+  {
+    padding: 0 0.5rem 0 1.3rem !important;
+  }
+  #header .form-control {
+    left: -153px;
+    font-size: 13px !important;
+    width: 150px;
+  }
+  header #burgersm img
+  {
+    width: 20px;
+  }
+  header .searchBox img
+  {
+    width: 15px;
+  }
+  header .text-dark
+  {
+    font-size: 12px;
+  } 
+  header .select-box__input:checked+.select-box__input-text {
+    padding-left: 18px;
+    font-size: 13px;
+  }
+  header .select-box__icon
+  {
+    width: 8px;
+  }
+  header ,.select-box_list li
+  {
+    font-size: 13px;
+  }
+  #main {  
+    margin-left: 0px !important;
+    border-left: 0px solid rgb(235, 232, 232);
+  }
+
+  .sidenav {
+    top: 0;
+    padding-top: 0px;
+    transform: translateX(-100%);
+    width: 85%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.09);
+    transition: all 0.3s ease-in-out;
+  }
+  .sidenav .top_bar
+  {
+    height: 3.95rem;
+  }
+  .menuOverlay
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 70;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+  }
+  .menuOverlay.active
+  {
+    display: block;
+  }
+  .sidenav a
+  {
+    padding: 26px 8px 5px 32px;
+  }
+  .sidenav a span.active
+  {
+    color: #05a6f0;
+  }
+  .sidenav .closebtn
+  {
+    padding: 17px 8px 5px 32px;
+  }
+  .sidenav .closebtn img
+  {
+    margin-top: 3px;
+  }
+  .sidenav a span
+  {
+    margin-left: 15px;
+    display: inline;
+    transition: linear 0.3s;
+    animation-delay: 0.5s;
+    font: normal normal normal 14px/17px 'Roboto', sans-serif;
+    color: #9BABC5;
+    opacity: 1;
+  }
+  .sidenav.active
+  {
+    transform: translateX(0%);
+  }
+
+  .card1{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+
+
+element.style {
+  min-height: 414px;
+}
+.barChart2 {
+  margin-top: 1.5rem;
+  display: block;
+}
+
+  #myChart{
+    height: 375px !important;
+    width: 75vw !important;
+
+  }
+
+  .def_board .select-box {
+    width: 100% !important;
+}
+
+}

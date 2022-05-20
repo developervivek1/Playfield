@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="css/customdropdown.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="menuOverlay"></div>
+    <header class="header bg-white d-non" id="header">
+      <div class="d-block d-md-none">
+        <a id="burgersm" href="#" class="openbtn">
+          <img src="img/noun-menu-705116.svg" width="24" alt="" />
+        </a>
+      </div>
+      <!-- <div class=" header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div> -->
+      <div class="d-none d-md-block">
+        <img src="img/play_field.svg" width="110" alt="" />
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <div class="pe-md-4 me-md-1 pe-3 searchBox d-flex">
+          <input
+            type="text"
+            id="search2"
+            class="form-control form-search"
+            placeholder="Search Here"
+          />
+          <a href="#" onclick="openSearch()"
+            ><img src="img/Component 14 – 1.svg" alt="" width="17"
+          /></a>
+        </div>
+        <div class="pe-md-3"><a href="#" class="text-dark">Help</a></div>
+        <div class="">
+          <div class="select-box">
+            <div class="select-box__current" tabindex="1">
+              <div class="select-box__value">
+                <input
+                  class="select-box__input"
+                  type="radio"
+                  id="0"
+                  value="1"
+                  name="user_profile_list"
+                  checked="checked"
+                />
+                <p class="select-box__input-text">EN</p>
+              </div>
+              <div class="select-box__value">
+                <input
+                  class="select-box__input"
+                  type="radio"
+                  id="1"
+                  value="2"
+                  name="user_profile_list"
+                />
+                <p class="select-box__input-text">US</p>
+              </div>
+              <div class="select-box__value">
+                <input
+                  class="select-box__input"
+                  type="radio"
+                  id="2"
+                  value="3"
+                  name="user_profile_list"
+                />
+                <p class="select-box__input-text">EU</p>
+              </div>
+              <img
+                class="select-box__icon"
+                src="img/arrow_down.svg"
+                alt="Arrow Icon"
+                aria-hidden="true"
+              />
+            </div>
+            <ul class="select-box__list">
+              <li>
+                <label
+                  class="select-box__option"
+                  for="0"
+                  aria-hidden="aria-hidden"
+                  >EN</label
+                >
+              </li>
+              <li>
+                <label
+                  class="select-box__option"
+                  for="1"
+                  aria-hidden="aria-hidden"
+                  >US</label
+                >
+              </li>
+              <li>
+                <label
+                  class="select-box__option"
+                  for="2"
+                  aria-hidden="aria-hidden"
+                  >EU</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div> -->
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+      <div class="d-flex d-md-none border-bottom top_bar">
+        <a class="ps-3 pt-2 pb-1" href="#">
+          <img src="img/play_field.svg" width="100" alt="" />
+        </a>
+        <a id="burgersm2" class="closebtn">
+          <img
+            class="float-end ps-3"
+            src="img/noun-close-4619407 (1).svg"
+            alt=""
+          />
+        </a>
+      </div>
+
+      <div class="d-none d-md-block">
+        <a
+          id="burger2"
+          href="javascript:void(0)"
+          class="closebtn"
+          onclick="closeNav()"
+          style="display: none"
+        >
+          <img src="img/close.svg" width="24" alt="" /><span>Collapse</span></a
+        >
+        <a id="burger" href="#" class="openbtn" onclick="openNav()">
+          <img src="img/close.svg" width="24" alt="" /><span>Collapse</span>
+        </a>
+      </div>
+
+      <a href="#" class="active"
+        ><img src="img/home.svg" alt="" /> <span class="active">Home</span></a
+      >
+      <a href="#"
+        ><img src="img/football.svg" alt="" /> <span>Playfield</span></a
+      >
+      <a href="#"
+        ><img src="img/profile.svg" alt="" /> <span>Ownership</span></a
+      >
+      <a href="#"><img src="img/whistle.svg" alt="" /> <span>Coach</span></a>
+      <a href="#"
+        ><img src="img/pie.svg" alt="" /> <span>Website Analytics</span></a
+      >
+      <a href="signIn.html" class="powerButton"
+        ><img src="img/noun-on-off-3556996.svg" alt="" /> <span>Switch</span></a
+      >
+    </div>
+
+    <div id="opacityDiv" class="displayDiv"></div>
+    <div id="main" class="def_board">
+      <div class="listOverlay"></div>
+      <div class="container-flex">
+        <div class="row">
+          <div class="head mt-4 mb-2 pb-1">
+            <h6>Dashboard Overview</h6>
+          </div>
+          <div class="d-block d-md-flex flex-wrap mb-4 pb-1">
+              <div class="select-box">
+                <div class="options-container">
+                  <div class="search-box">
+                    <input
+                      type="text"
+                      class="search_input"
+                      placeholder="Search"
+                    />
+                  </div>
+                  <div class="inside_option">
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport1" />
+                        <label for="sport1">All</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport2" />
+                        <label for="sport2">Cricket</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport3" />
+                        <label for="sport3">Football</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport4" />
+                        <label for="sport4">Hockey</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport5" />
+                        <label for="sport5">Polo</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport6" />
+                        <label for="sport6">Carrom</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport7" />
+                        <label for="sport7">Ludo</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport8" />
+                        <label for="sport8">Kabaddi</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport9" />
+                        <label for="sport9">Redmi Note 8</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport10" />
+                        <label for="sport10">Redmi Note 8 Pro</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport11" />
+                        <label for="sport11">Redmi 8</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport12" />
+                        <label for="sport12">Redmi 8A</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport13" />
+                        <label for="sport13">Redmi k20</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option" id="sport14" />
+                        <label for="sport14">Redmi k20 Pro</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- inside option closed -->
+                </div>
+                <!-- options-container closed -->
+                <div class="selected">
+                  <p>Select Sport</p>
+                  <p class="d-none">Select Sport</p>
+                </div>
+              </div>
+              <div class="select-box mt-3 mt-md-0">
+                <div class="options-container">
+                  <div class="search-box">
+                    <input
+                      type="text"
+                      class="search_input"
+                      placeholder="Search"
+                    />
+                  </div>
+                  <div class="inside_option">
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state1" />
+                        <label for="state1">All</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state2" />
+                        <label for="state2">AP - Andhra Pradesh</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state3" />
+                        <label for="state3">AP - Arunachal Pradesh</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state4" />
+                        <label for="state4">AS - Assam</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state5" />
+                        <label for="state5">BR - Bihar</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state6" />
+                        <label for="state6">MH - Maharashtra</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state7" />
+                        <label for="state7">UP - Uttar Pradesh</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state8" />
+                        <label for="state8">WB - West Bengal</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state9" />
+                        <label for="state9">GJ - Gujarat</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state10" />
+                        <label for="state10">Redmi Note 8 Pro</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state11" />
+                        <label for="state11">Redmi 8</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state12" />
+                        <label for="state12">Redmi 8A</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state13" />
+                        <label for="state13">Redmi k20</label>
+                      </div>
+                    </div>
+                    <div class="mainoption">
+                      <div class="option">
+                        <input type="checkbox" name="option2" id="state14" />
+                        <label for="state14">Redmi k20 Pro</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- inside option closed -->
+                </div>
+                <!-- options container closed -->
+                <div class="selected">
+                  <p>Select State</p>
+                  <p class="d-none">Select State</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-sm-6 col-md-3">
+                <div class="card1 p-2">
+                  <div class="card-title d-flex">
+                    <img src="img/Group 49436.svg" alt="" />
+                    <p class="ps-3 mt-2 pt-1 mb-2">Playfields</p>
+                  </div>
+                  <div class="">
+                    <div class="d-flex float-end">
+                      <img
+                        class="pe-2"
+                        src="img/Icon awesome-caret-down (1).svg"
+                        alt=""
+                      />
+                      <p class="mb-0">5.27%</p>
+                    </div>
+                  </div>
+                  <div class="clear-end d-flex justify-content-between">
+                    <h4 class="">105K</h4>
+                    <p class="mb-0 mt-1">Since last month</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="card1 card2 p-2">
+                  <div class="card-title d-flex">
+                    <img src="img/Group 49437.svg" alt="" />
+                    <p class="ps-3 mt-2 pt-1 mb-2">Coaches</p>
+                  </div>
+                  <div class="">
+                    <div class="d-flex float-end">
+                      <img
+                        class="pe-2"
+                        src="img/Icon awesome-caret-down.svg"
+                        alt=""
+                      />
+                      <p class="mb-0">5.27%</p>
+                    </div>
+                  </div>
+                  <div class="clear-end d-flex justify-content-between">
+                    <h4 class="">105K</h4>
+                    <p class="mb-0 mt-1">Since last month</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="card1 card3 p-2">
+                  <div class="card-title d-flex">
+                    <img src="img/Group 49438.svg" alt="" />
+                    <p class="ps-3 mt-2 pt-1 mb-2">Atheletes</p>
+                  </div>
+                  <div class="">
+                    <div class="d-flex float-end">
+                      <img
+                        class="pe-2"
+                        src="img/Icon awesome-caret-down (1).svg"
+                        alt=""
+                      />
+                      <p class="mb-0">5.27%</p>
+                    </div>
+                  </div>
+                  <div class="clear-end d-flex justify-content-between">
+                    <h4 class="">105K</h4>
+                    <p class="mb-0 mt-1">Since last month</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="card1 card4 p-2">
+                  <div class="card-title d-flex">
+                    <img src="img/Group 49260.svg" alt="" />
+                    <p class="ps-3 mt-1 mb-0">
+                      Upcoming <br />
+                      Infrastructure
+                    </p>
+                  </div>
+                  <div class="">
+                    <div class="d-flex float-end">
+                      <img
+                        class="pe-2"
+                        src="img/Icon awesome-caret-down (1).svg"
+                        alt=""
+                      />
+                      <p class="mb-0">5.27%</p>
+                    </div>
+                  </div>
+                  <div class="clear-end d-flex justify-content-between">
+                    <h4 class="">105K</h4>
+                    <p class="mb-0 mt-1">Since last month</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="mt-3 rounded india bg-danger" style="width: 100%">
+                  <center>
+                    <div id="visualization" class="rounded"></div>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="chartDiv mt-4 mt-md-0 p-4">
+              <h6>Disciplines</h6>
+              <p>
+                This data helps you to visualize the <br />
+                frequency of playfield Available in India
+              </p>
+
+              <div class="chart doughnut w-100">
+                <div class="canvas-container">
+                  <center><canvas id="myCanvas"></canvas></center>
+                  <h3>Disciplines</h3>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <ul class="ps-3">
+                    <li>
+                      <data value="0.80" data-color="#DED3FF">Cricket</data>
+                      <span>30%</span>
+                    </li>
+                    <li>
+                      <data value="0.65" data-color="#05A6F0">Hockey</data>
+                      <span>25%</span>
+                    </li>
+                    <li>
+                      <data value="0.55" data-color="#F47122">Kabbadi</data>
+                      <span>16%</span>
+                    </li>
+                  </ul>
+
+                  <ul class="float-end ps-5">
+                    <li>
+                      <data value="0.45" data-color="#FFBB59">Volleyball</data>
+                      <span>12%</span>
+                    </li>
+                    <li>
+                      <data value="0.25" data-color="#A3A0FB">Football</data>
+                      <span>20%</span>
+                    </li>
+                    <li>
+                      <data value="0.15" data-color="#593FE7">Others</data>
+                      <span>8%</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="listed mb-2">* Top 5 Sports Listed Here</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-9">
+            <div class="barChartDiv shadow-sm rounded bg-white p-4">
+              <div class="d-flex justify-content-between">
+                <h6>Coach Dashboard</h6>
+                <p>View Coach Dasboard</p>
+              </div>
+              <div class="barChart2" style="min-height: 414px">
+                <div class="barChart1 w-75">
+                  <center>
+                    <div>
+                      <canvas
+                        id="myChart"
+                        class=""
+                        style="height: 50vh"
+                      ></canvas>
+                    </div>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="progressDiv mt-4 mt-md-0 p-4" style="min-height: 500px">
+              <h4 class="mb-0">Ownership Dashboard</h4>
+
+              <a href="#">View Dasboard</a>
+              <div class="blueCard mt-2 p-3">
+                <div class="d-flex justify-content-between">
+                  <p>State Goverment</p>
+                  <p>50%</p>
+                </div>
+
+                <div
+                  class="progress bg-info rounded rounded-right"
+                  style="height: 5px"
+                >
+                  <div
+                    class="progress-bar bg-white"
+                    style="width: 40%; height: 5px; border-radius: 50px"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="blueCard mt-2 p-3">
+                <div class="d-flex justify-content-between">
+                  <p>Univercity</p>
+                  <p>50%</p>
+                </div>
+                <div
+                  class="progress bg-info rounded rounded-right"
+                  style="height: 5px"
+                >
+                  <div
+                    class="progress-bar bg-white"
+                    style="width: 40%; height: 5px; border-radius: 50px"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="blueCard mt-2 p-3">
+                <div class="d-flex justify-content-between">
+                  <p>Municipal Department</p>
+                  <p>50%</p>
+                </div>
+                <div
+                  class="progress bg-info rounded rounded-right"
+                  style="height: 5px"
+                >
+                  <div
+                    class="progress-bar bg-white"
+                    style="width: 40%; height: 5px; border-radius: 50px"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="blueCard mt-2 p-3">
+                <div class="d-flex justify-content-between">
+                  <p>Govt School</p>
+                  <p>50%</p>
+                </div>
+                <div
+                  class="progress bg-info rounded rounded-right"
+                  style="height: 5px"
+                >
+                  <div
+                    class="progress-bar bg-white"
+                    style="width: 40%; height: 5px; border-radius: 50px"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="blueCard mt-2 p-3">
+                <div class="d-flex justify-content-between">
+                  <p>Private College</p>
+                  <p>50%</p>
+                </div>
+                <div
+                  class="progress bg-info rounded rounded-right"
+                  style="height: 5px"
+                >
+                  <div
+                    class="progress-bar bg-white"
+                    style="width: 40%; height: 5px; border-radius: 50px"
+                  ></div>
+                </div>
+              </div>
+              <div class="blueCard mt-2 p-3">
+                <div class="d-flex justify-content-between">
+                  <p>Private Institute</p>
+                  <p>50%</p>
+                </div>
+                <div
+                  class="progress bg-info rounded rounded-right"
+                  style="height: 5px"
+                >
+                  <div
+                    class="progress-bar bg-white"
+                    style="width: 40%; height: 5px; border-radius: 50px"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <img src="img/Line_graph.svg" class="border w-100" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- india geochart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- // -->
+
+    <!-- barchartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- // -->
+    <script src="js/script.js"></script>
+    <script src="js/customselect.js"></script>
+    <script src="js/customchart.js"></script>
+  </body>
+</html>
