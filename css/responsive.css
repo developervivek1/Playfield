@@ -150,12 +150,4 @@ element.style {
   width: 94%;
   margin-bottom: 1rem;
 }
-
-.orderDiv .order1{
-  order: 1;
-}
-
-.orderDiv .order2{
-  order: 2;
-}
 }
