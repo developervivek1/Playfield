@@ -145,4 +145,9 @@ element.style {
 .atheleteDiv .buleAthlete{
   width: 100%;
 }
+
+#home .select-box .selected {
+  width: 100%;
+  margin-bottom: 1rem;
+}
 }
