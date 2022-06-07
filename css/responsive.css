@@ -3,6 +3,7 @@
         width: 80%;
       }
 
+
 }
 
 
@@ -128,4 +129,20 @@ element.style {
     width: 100% !important;
 }
 
+
+}
+
+
+
+/*  */
+
+@media (max-width:767px){
+
+  .atheleteDiv .lightDiv{
+    width: 100% !important;
+}
+
+.atheleteDiv .buleAthlete{
+  width: 100%;
+}
 }

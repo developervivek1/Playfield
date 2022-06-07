@@ -17,6 +17,7 @@
 
     <!-- barchartjs -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
     <!-- // -->
 
     <link rel="stylesheet" href="css/style.css">
@@ -108,15 +109,10 @@
         <div class="container-flex">
             <div class="row">
                 <div class="col-md-9">
-                    <div class="row">
-                      
-
-                        <div class="col-md-12">
+                    
                             <div class="rounded india bg-danger" style="width: 100%;">
                                <center> <div id="visualization" class="rounded"> </div></center>
-                            </div>
-                        </div>
-
+                          
                     </div>
 
                 </div>
@@ -138,7 +134,7 @@
                                     <input class="select-box__input1" type="radio" id="5" value="3" name="user_profile_list1">
                                     <p class="select-box__input-text1">Sports 2</p>
                                 </div>
-                                <img class="select-box__icon1" src="img/arrow_down.svg" alt="Arrow Icon" aria-hidden="true">
+                                <img class="select-box__icon1" src="img/arrow_down_white.svg" alt="Arrow Icon" aria-hidden="true">
                             </div>
                             <ul class="select-box__list1">
                                 <li>
@@ -155,9 +151,9 @@
                     </div>
                        <!--  -->
                         <div class="chart doughnut w-100">
-                            <div class="canvas-container">
+                            <div class="canvas-container pt-4 pb-4">
 
-                                <center> <canvas id="myCanvas"></canvas></center>
+                                <center>  <canvas id="myChart3" style="height: 170px;"></canvas></center>
                                 <h3>Disciplines</h3>
                             </div>
 
@@ -298,6 +294,77 @@
     -webkit-appearance: none;
   
   }
+
+  .atheleteDiv{
+    background: #ECF6FF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 22px #05A6F008;
+    border: 1px solid #00A3EE;
+    border-radius: 6px;
+    opacity: 1;
+  }
+
+  .atheleteDiv p{
+      font-size: 13px;
+      color: #6E6D7A;
+      opacity: 1;
+  }
+
+  .searchBox2 .form-control{
+    padding: 0px;
+    /* position: absolute; */
+    left: -203px;
+    border: 0px;
+    border-radius: 0px;
+    height: 28px;
+    font-size: 14px !important;
+    border-bottom: 1px solid #bebbbb;
+    outline: 0;
+    width: 50%;
+    background-color: transparent;
+  }
+
+  .buleAthlete{
+    background: transparent linear-gradient(180deg, #00ABFA 0%, #0091D4 100%) 0% 0% no-repeat padding-box;
+    border-radius: 0px 7px 7px 0px;
+    opacity: 1;
+    width: 33%;
+  }
+
+  .courtDiv .atheleteDiv,.barChartDiv,.buleAthlete{
+        min-height:43vh !important;
+  }
+
+ .whiteChart{
+    
+
+     background: #6f4625 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 3px 6px #00000014;
+    box-shadow: 0px 3px 6px #00000014;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    opacity: 1;
+    
+    background-image: url('./img/wavewh.svg');
+    z-index: -999;
+ }
+
+ .canvas-container div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    letter-spacing: 0px;
+    color: rgb(44, 41, 41);
+    opacity: 1;
+    text-align: center;
+}
+
+.canvas-container div h2{
+    font-size: 18px;
+    font-weight: bold;
+}
 
 
 </style>
@@ -674,73 +741,74 @@
                    </div>
 
                 </div>
+
+                <style>
+                    .whiteChart >h6{
+                                text-align: left;
+                                font-size: 14px !important;
+                                letter-spacing: 0px;
+                                color: #11142D;
+                                opacity: 1;
+                                font-weight: 500 !important;
+                                }
+                    .whiteChart .div1,.div2,.div3{
+                        width: 15px;
+                        height: 5px;
+                        border-radius: 50px;
+                    }
+
+                    .whiteChart .div1{
+                        background-color: #05A6F0;
+                    }
+                    .whiteChart .div2{
+                        background-color: #F47122;
+                    }
+                    .whiteChart .div3{
+                        background-color: #FFCB41;
+                    }
+
+                </style>
                 <div class="col-md-3">
-                    <div class="chartDiv mt-4 mt-md-0 p-4">
+                    <div class="chartDiv whiteChart mt-4 mt-md-0 p-4">
                         <!--  -->
-                        <div class="">
-                         <div class="select-box1">
-                             <div class="select-box__current1" tabindex="1">
-                                 <div class="select-box__value1">
-                                     <input class="select-box__input1" type="radio" id="3" value="1" name="user_profile_list1" checked="checked">
-                                     <p class="select-box__input-text1">Sports Disciplines</p>
-                                 </div>
-                                 <div class="select-box__value1">
-                                     <input class="select-box__input1" type="radio" id="4" value="2" name="user_profile_list1">
-                                     <p class="select-box__input-text1">Sports 1</p>
-                                 </div>
-                                 <div class="select-box__value1">
-                                     <input class="select-box__input1" type="radio" id="5" value="3" name="user_profile_list1">
-                                     <p class="select-box__input-text1">Sports 2</p>
-                                 </div>
-                                 <img class="select-box__icon1" src="img/arrow_down.svg" alt="Arrow Icon" aria-hidden="true">
-                             </div>
-                             <ul class="select-box__list1">
-                                 <li>
-                                     <label class="select-box__option1" for="3" aria-hidden="aria-hidden">Sports Disciplines</label>
-                                 </li>
-                                 <li>
-                                     <label class="select-box__option1" for="4" aria-hidden="aria-hidden">Sports 2</label>
-                                 </li>
-                                 <li>
-                                     <label class="select-box__option1" for="5" aria-hidden="aria-hidden">Sports 3</label>
-                                 </li>
-                             </ul>
-                         </div>
-                     </div>
+                        <h6 >Outdoor and Indoor</h6>
                         <!--  -->
-                         <div class="chart doughnut w-100">
-                             <div class="canvas-container">
+                         <div class="chart doughnut  w-100">
+                             <div class="canvas-container mt-5 mb-4 d-flex">
  
-                                 <center> <canvas id="myCanvas" width="450" height="450"></canvas></center>
-                                 <h3>Disciplines</h3>
+                                 <canvas id="myChart2" style="height:175px"></canvas>
+                                 <div class="text-dark fw-bold"><h6>Total</h6> <h2 class="text-dark">10,000</h2></div>
                              </div>
- 
-                             <div class="d-flex justify-content-between">
- 
- 
-                                 <ul class="ps-3">
-                                     <li style="color: rgb(222, 211, 255);"><data value="0.80" data-color="#DED3FF">Cricket</data> <span>30%</span></li>
-                                     <li style="color: rgb(5, 166, 240);"><data value="0.65" data-color="#05A6F0">Hockey</data> <span>25%</span></li>
-                                     <li style="color: rgb(244, 113, 34);"><data value="0.55" data-color="#F47122">Kabbadi</data> <span>16%</span></li>
-                                 </ul>
- 
-                                 <ul class="float-end ps-5">
-                                     <li style="color: rgb(255, 187, 89);"><data value="0.45" data-color="#FFBB59">Volleyball</data> <span>12%</span></li>
-                                     <li style="color: rgb(163, 160, 251);"><data value="0.25" data-color="#A3A0FB">Football</data> <span>20%</span></li>
-                                     <li style="color: rgb(89, 63, 231);"><data value="0.15" data-color="#593FE7">Others</data> <span>8%</span></li>
- 
-                                 </ul>
-                             </div>
+                             <hr class="bg-dark mt-5 mb-5">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="div1"></div>
+                                        <p class="text-secondary">Outdoor : <span><b class="text-dark">5000</b></span></p>
+                                    </div>
+                                    <div>
+                                        <div class="div2"></div>
+                                        <p class="text-secondary">Indoor : <span><b class="text-dark">3000</b></span></p>
+                                    </div>
+                                    
+
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="div3"></div>
+                                        <p class="text-secondary m-0">Both : <span><b class="text-dark">2000</b></span></p>
+                                    </div>
+                                </div>
                          </div>
  
-                         <p class="listed mb-2">* Top 5 Sports Listed Here</p>
+                        
                      </div>
 
                 </div>
 
             </div>
 
-            <div class="row mt-4">
+            <div class="row courtDiv mt-4 mb-4">
               
                 <div class="col-md-4">
                     <div class="barChartDiv shadow-sm rounded bg-white p-4" >
@@ -748,14 +816,13 @@
                             <h6>No of Court for Simultaneous</h6>
                             <!-- <p>View Coach Dasboard</p> -->
                         </div>
-                        <div class="barChart2" style="min-height: 414px;">
+                        <div class="barChart2">
 
-                            <div class="barChart1 w-100">
+                            <div class="barChart1 pt-3 mt-1 w-100">
 
                                 <center>
-                                    <div> <canvas id="myChart" class=""  style="height: 50vh;"></canvas> </div>
+                                    <div> <canvas id="myChart" class="" height="auto"></canvas> </div>
                                 </center>
-
 
                             </div>
 
@@ -767,11 +834,51 @@
 
                 <div class="col-md-8">
                    
-                                <div class="progressDiv mt-4 mt-md-0 p-4">
-                                    <h4 class="mb-0">Athlete Usability</h4>
-                                   
-                                    <p class="fs-6">Average number of athletes utilizing the resources on a daily basis</p>
-            
+                    <div class="atheleteDiv mt-4 mt-md-0">
+                          <div class="d-flex">
+                              <div class="pt-4 ps-4 pe-4 pb-2 w-75">
+                                <h6 class="mb-0">Athlete Usability</h6>   
+                                <p class="mt-2">Average number of athletes utilizing the resources on a daily basis</p>
+                                
+
+                                <div class="form-check pt-2 d-flex ps-0">
+                                 
+                                    <label class="text-secondary" for="">Search by: </label>
+                                 
+                                <div class="ms-4 ps-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Playfield Name
+                                    </label>
+                                </div>
+
+                                <div class="ms-5">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        State and District
+                                    </label>
+                                </div>
+                                </div>
+
+                                <div class="pe-3 pe-md-4 d-flex justify-content-center pt-4 searchBox2">
+                                    
+                                    <input type="text" id="search2" class="form-control" placeholder="Search Here">
+                                    <img src="img/Component 14 – 1.svg" alt="">
+                                </div>
+                              </div>
+
+                              <div class="buleAthlete pt-4 ps-4 pe-4 pb-2 ">
+
+                                <div class="text-center pt-3">
+                                    <img src="img/athlet.svg" alt="">
+                                    <h3 class="text-white pt-4">500</h3>
+                                   <center> <hr class="bg-white w-50"></center>
+                                    <p class="text-white">500 Athletes using the resources on daily basis in the selected State, District, Sports</p>
+
+                                </div>
+                              </div>
+                          </div>         
+                                 
                          
                     </div>
 
@@ -793,11 +900,14 @@
     <!-- barchartjs -->
     <script>
         var ctx = document.getElementById('myChart').getContext('2d');
+        
         var myChart = new Chart(ctx, {
             type: 'bar',
+            
 
             data: {
                 labels: ["1-2", "2-4", "5 More",],
+               
                 datasets: [{
                     label: 'Blue',
                     data: [650, 600, 300,],
@@ -814,12 +924,14 @@
                 ]
             },
 
-
             options: {
-
+                maintainAspectRatio: false,
                 barPercentage: 0.3,
+              
+                
 
                 plugins: {
+                    
                     
                     legend: {
                         display: false
@@ -848,6 +960,7 @@
 
 
                 responsive: true,
+                
                 scales: {
                     y: {
 
@@ -886,77 +999,167 @@
    
 
 
-    <!-- doughnut -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-    <script>
-        $(document).ready(function () {
-
-            $('.chart.doughnut').each(function () {
-                type: 'doughnut';
-                var chartID = $(this).find('canvas').attr('id');
-                var c = document.getElementById(chartID);
-                var width = $('#' + chartID).width();
-
-                var height = width;
-                var linewidth = width / 8;
-                c.setAttribute('width', width * 2);
-                c.setAttribute('height', height * 2);
-                var ctx = c.getContext('2d');
-                var startingPoint = -0.5;
-                ctx.scale(2, 2);
-                ctx.beginPath();
-                ctx.arc(height / 2, height / 2, width / 3, 0 * Math.PI, 1 * Math.PI);
-                ctx.lineWidth = linewidth;
-                ctx.strokeStyle = 'none';
-                // ctx.shadowOffsetX = 3;
-                // ctx.shadowOffsetY = 3;
-                ctx.shadowBlur = 20;
-
-
-                ctx.shadowColor = "rgba(0,0,0,0.1)";
-                ctx.stroke();
-
-                var options = {
-                    animation: true,
-                    showTooltips: true,
-                    tooltipFillColor: "rgba(255,255,255,0.7)",
-                    tooltipFontColor: "#000",
-                    tooltipEvents: ["mousemove", "touchstart", "touchmove"],
-                    multiTooltipTemplate: "<%= datasetLabel %>$<%= value %>",
-                    onAnimationComplete: function () {
-                        this.showTooltip(this.segments, true);
-                    },
-
-                    tooltipEvents: [],
-
-                };
-
-                $(this).find('li').each(function () {
-
-                    var start = startingPoint;
-                    var dataValue = $(this).find('data').attr('value');
-                    var end = startingPoint + (2.5 * dataValue);
-                    var color = $(this).find('data').data('color');
-                    ctx.beginPath();
-                    ctx.arc(height / 2, height / 2, width / 3, startingPoint * Math.PI, end * Math.PI);
-                    ctx.lineWidth = linewidth;
-                    ctx.strokeStyle = color
-                    ctx.stroke();
-                    $(this).css('color', color);
-
-
-                });
-
-
-            });
-
-
-        });
-
-    </script>
+   
 
     <!-- doughnut// -->
+    <script>
+        const ctx3 = document.getElementById('myChart3').getContext('2d');
+        const myChart3 = new Chart(ctx3, {
+            type: 'doughnut',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow',],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [ 30, 70,30,20,10,25,],
+                    backgroundColor: [
+                        '#F47122',
+                        '#05A6F0',
+                        '#FFCB41',
+                        '#593FE7',
+                        '#A3A0FB',
+                        '#FFBB59',
+                        
+                    ],
+                    borderColor: [
+                    '#F47122',
+                        '#05A6F0',
+                        '#FFCB41',
+                        '#593FE7',
+                        '#A3A0FB',
+                        '#FFBB59',
+                        
+                    ],
+                    borderWidth: 1,
+                    cutout:'70%',
+                  
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+    
+                plugins: {
+                        
+                        
+                        legend: {
+                            display: false
+                        },
+                        label:{
+                        render:'label',
+                        precision:1,
+                        arc:true,
+                        position:'outside',
+                    },
+                        title: {
+                            display: false,
+                            text: 'Example',
+                            font: {
+                                size: 14
+                            }
+                        },},
+                
+                        responsive: true,
+                    
+                        scales: {
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Volunteer Hours',
+                    },
+                    gridLines: {
+                        display: false,
+                    },
+                }],
+    
+                yAxes: [{
+                    gridLines: {
+                        display: false,
+    
+                    }
+                }]
+    
+            }
+            }
+        });
+        </script>
+<!-- doughnut2 -->
+<script>
+    const ctx2 = document.getElementById('myChart2').getContext('2d');
+    const myChart2 = new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow',],
+            datasets: [{
+                label: '# of Votes',
+                data: [ 30, 70,30],
+                backgroundColor: [
+                    '#F47122',
+                    '#05A6F0',
+                    '#FFCB41',
+                    
+                ],
+                borderColor: [
+                    '#F47122',
+                    '#05A6F0',
+                    '#FFCB41',
+                    
+                ],
+                offset: 5,
+                borderWidth: 1,
+                cutout:'70%',
+                borderRadius:5,
+               
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
 
+            plugins: {
+                    
+                    
+                    legend: {
+                        display: false
+                    },
+                    label:{
+                        render:'label',
+                        precision:1,
+                        arc:true,
+                        position:'outside',
+                    },
+                    title: {
+                        display: false,
+                        text: 'Example',
+                        font: {
+                            size: 14
+                        }
+                    },},
+            
+                    responsive: true,
+                
+                    scales: {
+            xAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Volunteer Hours',
+                },
+                gridLines: {
+                    display: false,
+                },
+            }],
+
+            yAxes: [{
+                gridLines: {
+                    display: false,
+
+                }
+            }]
+
+        }
+        }
+    });
+    </script>
+
+
+<!-- // -->
 
 
 
@@ -1022,7 +1225,8 @@
         enableRegionInteractivity: "true",
         domain: "IN",
         responsive: true, 
-        height:430,          
+        height:407,
+                
         };
         var geochart = new google.visualization.GeoChart(
         document.getElementById('visualization'));

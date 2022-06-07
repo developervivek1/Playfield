@@ -563,14 +563,65 @@ margin-bottom: 3px;
       font-size: 17.5px;
     }
   }
-  .select-box
+}
+
+// playfield overview css
+
+@keyframes fadeIn
+{
+  0%
   {
-    width: 18% !important;
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+@keyframes fadeUp
+{
+  0%
+  {
+    opacity: 0;
+    margin-top: 8px;
+  }
+  100%
+  {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes imgFade
+{
+  0%
+  {
+    opacity: 0.8;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+.def_board
+{
+  .head
+  {
+    h6
+    {
+      font-size: 17.5px;
+    }
   }
 }
 
 #main
 {
+  .d-md-flex>.left_div
+  {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 25px;
+  }
   .listOverlay
   {
     position: fixed;
@@ -590,7 +641,7 @@ margin-bottom: 3px;
   {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 34%;
     position: relative;
     .options-container
     {
@@ -618,7 +669,7 @@ margin-bottom: 3px;
         {
           overflow-y: scroll;
           max-height: 230px;
-          padding-bottom: 15px;
+          padding-bottom: 53px;
           &::-webkit-scrollbar
           {
             border-radius: 10px;
@@ -660,15 +711,18 @@ margin-bottom: 3px;
       align-items: center;
       padding: 0px 2px 0px 2px;
       height: 34px;
-      cursor: pointer;  
       label
       {
         font-size: 13px;
+        margin-top: 2px;
         color: #11142D;
+        text-transform: capitalize;
+        cursor: pointer;  
       }
       input
       {
         margin-right: 10px;
+        cursor: pointer;
       }
     }
     .selected
@@ -707,6 +761,7 @@ margin-bottom: 3px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        text-transform: capitalize;
       }
     }
   }
@@ -886,10 +941,15 @@ margin-bottom: 3px;
           td
           {
               padding-left: 9px;
+              position: relative;
+              p
+              {
+                display: inline-block;
+              }
           }
           tr
           {
-            height: 50px;
+            height: 56px;
             background-color: #fff;
             margin-bottom: 5px;
             box-shadow: 0 0 4px rgba(0,0,0,0.05);
@@ -908,6 +968,7 @@ margin-bottom: 3px;
               font-weight: 500;
               margin-right: 13px;
               color: #000;
+              display: inline-block;
             }
             td
             {
@@ -922,6 +983,7 @@ margin-bottom: 3px;
                   width: 5px;
                   height: 5px;
                   top: 3px;
+                  cursor: pointer;
                   transform: translateX(270%);
                 }
               }
@@ -934,7 +996,61 @@ margin-bottom: 3px;
             {
               display: flex;
               align-items: center;
-              height: 50px;
+              height: 56px;
+            }
+            td:nth-child(4),td:nth-child(5)
+            {
+              img
+              {
+                position: absolute;
+                left: 91%;
+                top: 23px;
+                cursor: pointer;
+              }
+              .mydropdown
+              {
+                position: absolute;
+                top: 48px;
+                right: 3%;
+                z-index: 50;
+                padding: 18px 20px 5px;
+                border-radius: 8px;
+                background: #fff;
+                width: 220px;
+                height: auto;
+                box-shadow: 0 0 12px rgba(0, 0, 0, 0.1%);
+                display: none;
+                transition: all 0.2s ease;
+                &.active
+                {
+                  display: block;
+                  animation: fadeUp 0.2s linear;
+                }
+                ul
+                {
+                  list-style-type: none;
+                  padding-left: 0;
+                  li
+                  {
+                    margin-bottom: 0.58rem;
+                  }
+                  input
+                  {
+                    margin-right: 0.8rem;
+                    cursor: pointer;
+                    vertical-align: middle;
+                    margin-top: -2px;
+                  }
+                  label
+                  {
+                    font-family: var(--body-font);
+                    color: #8e8ea7;
+                    cursor: pointer;
+                    font-size: 13px;
+                    margin-top: -2px;
+                  }
+                }
+              }
             }
           }
           p
@@ -1000,7 +1116,7 @@ margin-bottom: 3px;
         {
           button
           {
-            margin-right: 0.6rem;
+            margin-right: 0.4rem;
             width: 29px;
             height: 29px;
             border: 1px solid #1395ED;
@@ -1019,6 +1135,24 @@ margin-bottom: 3px;
             {
               width: 100%;
               height: 100%;
+            }
+            &.nav_btn 
+            {
+              background-color: #05A6F0;
+              color: #fff;
+              &.disabled
+              {
+                background-color: #E8E9EC;
+                color: #747474;
+                border: none;
+              }
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              i
+              {
+                font-size: 18px;
+              }
             }
           }
           .gap_part
@@ -1347,6 +1481,10 @@ margin-bottom: 3px;
             label
             {
               font-size: 12px;
+              &.gray
+              {
+                color: #B3B3B3;
+              }
             }
           }
         }
@@ -1426,6 +1564,13 @@ margin-bottom: 3px;
                   }
                 }
               }
+              td:nth-child(4),td:nth-child(5)
+              {
+                img
+                {
+                  left: 86.5%;
+                }
+              }
             }
             tr 
             {
@@ -1454,13 +1599,19 @@ margin-bottom: 3px;
         {
           justify-content: center;
           margin: 1rem 0 25px;
+          flex-wrap: wrap;
           .pagination
           {
-            button:nth-child(4),
-            button:nth-child(5),
-            button:nth-child(6)
+            // button:nth-child(4),
+            // button:nth-child(5),
+            // button:nth-child(6)
+            // {
+            //   display: none;
+            // }
+            flex-wrap: wrap;
+            button
             {
-              display: none;
+              margin-bottom: 8px;
             }
             .gap_part
             {
@@ -1629,3 +1780,9 @@ margin-bottom: 3px;
     }
   }
 }
+
+
+
+
+// plyfldoverview css
+

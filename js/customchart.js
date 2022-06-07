@@ -104,67 +104,85 @@ var myChart = new Chart(ctx, {
 
 // doughnut chart
 
-$(document).ready(function () {
-  $('.chart.doughnut').each(function () {
-    type: 'doughnut';
-    var chartID = $(this).find('canvas').attr('id');
-    var c = document.getElementById(chartID);
-    var width = $('#' + chartID).width();
+const ctx3 = document.getElementById('myChart3').getContext('2d');
+const myChart3 = new Chart(ctx3, {
+  type: 'doughnut',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow',],
+    datasets: [{
+      label: '# of Votes',
+      data: [30, 70, 30, 20, 10, 25,],
+      backgroundColor: [
+        '#F47122',
+        '#05A6F0',
+        '#FFCB41',
+        '#593FE7',
+        '#A3A0FB',
+        '#FFBB59',
 
-    var height = width;
-    var linewidth = width / 8;
-    c.setAttribute('width', width * 2);
-    c.setAttribute('height', height * 2);
-    var ctx = c.getContext('2d');
-    var startingPoint = -0.5;
-    ctx.scale(2, 2);
-    ctx.beginPath();
-    ctx.arc(height / 2, height / 2, width / 3, 0 * Math.PI, 1 * Math.PI);
-    ctx.lineWidth = linewidth;
-    ctx.strokeStyle = 'none';
-    // ctx.shadowOffsetX = 3;
-    // ctx.shadowOffsetY = 3;
-    ctx.shadowBlur = 20;
+      ],
+      borderColor: [
+        '#F47122',
+        '#05A6F0',
+        '#FFCB41',
+        '#593FE7',
+        '#A3A0FB',
+        '#FFBB59',
 
-    ctx.shadowColor = 'rgba(0,0,0,0.1)';
-    ctx.stroke();
+      ],
+      borderWidth: 1,
+      cutout: '70%',
 
-    var options = {
-      animation: true,
-      showTooltips: true,
-      tooltipFillColor: 'rgba(255,255,255,0.7)',
-      tooltipFontColor: '#000',
-      tooltipEvents: ['mousemove', 'touchstart', 'touchmove'],
-      multiTooltipTemplate: '<%= datasetLabel %>$<%= value %>',
-      onAnimationComplete: function () {
-        this.showTooltip(this.segments, true);
+    }]
+  },
+  options: {
+    maintainAspectRatio: false,
+
+    plugins: {
+
+
+      legend: {
+        display: false
       },
+      label: {
+        render: 'label',
+        precision: 1,
+        arc: true,
+        position: 'outside',
+      },
+      title: {
+        display: false,
+        text: 'Example',
+        font: {
+          size: 14
+        }
+      },
+    },
 
-      tooltipEvents: [],
-    };
+    responsive: true,
 
-    $(this)
-      .find('li')
-      .each(function () {
-        var start = startingPoint;
-        var dataValue = $(this).find('data').attr('value');
-        var end = startingPoint + 2.5 * dataValue;
-        var color = $(this).find('data').data('color');
-        ctx.beginPath();
-        ctx.arc(
-          height / 2,
-          height / 2,
-          width / 3,
-          startingPoint * Math.PI,
-          end * Math.PI
-        );
-        ctx.lineWidth = linewidth;
-        ctx.strokeStyle = color;
-        ctx.stroke();
-        $(this).css('color', color);
-      });
-  });
+    scales: {
+      xAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: 'Volunteer Hours',
+        },
+        gridLines: {
+          display: false,
+        },
+      }],
+
+      yAxes: [{
+        gridLines: {
+          display: false,
+
+        }
+      }]
+
+    }
+  }
 });
+
 
 // geo chart
 
@@ -224,6 +242,7 @@ $(document).ready(function () {
       enableRegionInteractivity: 'true',
       domain: 'IN',
       responsive: true,
+      height:328,
     };
     var geochart = new google.visualization.GeoChart(
       document.getElementById('visualization')
